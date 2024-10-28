@@ -1,0 +1,17 @@
+<header class="m-0 p-5 flex">
+    <div class="mr-auto flex justify-between basis-1/4"> <!--left side navbar elements-->
+        <p class="text-4xl font-bold text-incepGreen">Logo</p>
+        <input type="text" id="search" name="search" placeholder="Search here..."
+        class="bg-transparent border-b-2 border-black/25 focus:outline-none focus:border-black/50">
+    </div>
+
+    <div class="mr-auto ml-auto flex justify-between basis-1/2"> <!--middle elements-->
+
+        <a [ngClass]="{'text-incepGreen': (linkNo==1)}" class="p-6 font-bold hover:text-black/50" (click)="moveToHome()" >Home</a>
+        <a [ngClass]="{'text-incepGreen': (linkNo==2)}" class="p-6 font-bold hover:text-black/50" (click)="moveToPages()">Pages</a>
+        <a [ngClass]="{'text-incepGreen': (linkNo==3)}" class="p-6 font-bold hover:text-black/50" (click)="moveToInsurance()">Insurance</a>
+        <a [ngClass]="{'text-incepGreen': (linkNo==4)}" class="p-6 font-bold hover:text-black/50" (click)="moveToBlog()">Blog</a>
+        <a [ngClass]="{'text-incepGreen': (linkNo==5)}" class="p-6 font-bold hover:text-black/50" (click)="moveToContact()">Contact Us</a>
+
+    </div>
+</header>
