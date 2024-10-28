@@ -1,1 +1,29 @@
-<p>footer works!</p>
+<footer class="mb-0 p-16 flex min-h-80 bg-incepGreen/5 min-w-full tablet:flex-col">
+
+    <div class="flex flex-col justify-between mr-auto basis-1/2 tablet:mr-0 tablet:mt-16 tablet:order-2">
+        <p class="text-4xl font-bold text-incepGreen">Logo</p>
+
+        <p class="text-incepGrey whitespace-nowrap extraSmall:whitespace-normal"><span class="font-bold whitespace-nowrap">Location:</span> Isr Street giltr awam juim</p>
+        <p class="text-incepGrey whitespace-nowrap extraSmall:whitespace-normal"><span class="font-bold whitespace-nowrap">Contact:</span> +9 5555559909</p>
+        <p class="text-incepGrey whitespace-nowrap extraSmall:whitespace-normal"><span class="font-bold whitespace-nowrap">Time:</span> (9am - 5pm EST, Monday - Friday)</p>
+        <p class="text-incepGrey whitespace-nowrap extraSmall:whitespace-normal"><span class="font-bold whitespace-nowrap">Email:</span> youme&#64;Rule.com</p>
+    
+    </div>
+    <div class="flex justify-between basis-1/2 ml-auto tablet:ml-0 tablet:order-1 mobile:flex-wrap mobile:gap-16" >
+    @for (title of footerTitles ; track i; let i = $index) {
+        <div class="flex flex-col justify-between">
+
+            <p class="text-2xl font-bold">{{footerTitles[i]}}</p>
+
+            @for (content of footerContent[i]; track j; let j = $index) {
+
+                <p (click)="linkClicked()" class="text-incepGrey whitespace-nowrap hover:opacity-80">{{footerContent[i][j]}}</p>
+
+            }
+
+        </div>
+    }
+    </div>
+
+
+</footer>

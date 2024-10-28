@@ -7,17 +7,21 @@ module.exports = {
     extend: {
       screens: {  // the sample webpage image only shows the desktop,
                   //so I will design it desktop first
-
-        mobile: { max: "479px" },
-
-        tablet: { max: "767px" },
+        extraSmall: { max: "400px" },
         
-        desktop: { min: "768px" },
+        mobile: { max: "625px" },
+
+        tablet: { max: "860px" },
+        
+        laptop: { max: "1249px" },
+
+        desktop: { min: "1250px"}
         
       },
 
       colors: {
-        incepGreen: '#128f82'
+        incepGreen: "#128f82",
+        incepGrey: "#656565"
       }
 
     },
