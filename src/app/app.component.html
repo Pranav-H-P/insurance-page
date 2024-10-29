@@ -1,5 +1,5 @@
-<app-header></app-header>
+<app-header [linkNo]="currentPageNo" (changeLink)="linkChanged($event)"></app-header>
 
 <router-outlet/>
 
-<app-footer></app-footer>
+<app-footer (changeLink)="linkChanged($event)"></app-footer>

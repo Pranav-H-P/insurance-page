@@ -28,7 +28,7 @@ export const routes: Routes = [
         component: HeroSectionComponent
     },
     {
-        path: 'notFound',
+        path: '**',
         component: NotFoundComponent
     }
 ];

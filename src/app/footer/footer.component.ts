@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 })
 export class FooterComponent {
 
+  @Output() changeLink = new EventEmitter<Number>();
+
   footerTitles: string[] = ["Company", "Explore", "Insurance"];
   footerContent: string[][] =[
     ["Case Studies", "Case Details", "Privacy Policy"],
@@ -20,7 +22,8 @@ export class FooterComponent {
   constructor(private router:Router){}
 
   linkClicked(){
-    this.router.navigate(['notFound']);
+    this.router.navigate(['notFound']); // none of these links exist
+    this.changeLink.emit(0);
   }
 
 }

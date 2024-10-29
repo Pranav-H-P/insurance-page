@@ -11,5 +11,11 @@ import { FooterComponent } from './footer/footer.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  
+  currentPageNo:Number = 1;
+
+
+  linkChanged(currPage:Number){
+    this.currentPageNo = currPage;
+  }
+
 }

@@ -5,8 +5,10 @@
         <p class="text-incepGrey text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi repellendus obcaecati et consequatur quo laudantium debitis mollitia? Corporis quo quisquam consectetur amet optio enim necessitatibus corrupti, consequatur incidunt voluptas aliquid?</p>
         
         <div class="flex gap-7 extraSmall:flex-col">
-            <button class="px-8 py-3 bg-incepGreen rounded-md text-white whitespace-nowrap">> Get Started</button>
-            <button class="px-8 py-3 border-2 border-incepGreen border-solid rounded-md flex text-incepGreen items-center gap-1 justify-between whitespace-nowrap extraSmall:justify-center">
+            <button (click)="goToNotFound()" class="px-8 py-3 bg-incepGreen rounded-md text-white whitespace-nowrap hover:bg-incepGreen/90">> Get Started</button>
+            <button (click)="goToContact()" class="px-8 py-3 border-2 border-incepGreen border-solid rounded-md flex text-incepGreen items-center
+             gap-1 justify-between whitespace-nowrap extraSmall:justify-center
+             hover:bg-slate-50">
                 <img src="../../../assets/images/sendIcon.png" class="w-5 h-auto">
                 Contact Us
             </button>

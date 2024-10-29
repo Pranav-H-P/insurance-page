@@ -9,4 +9,27 @@ import { Component } from '@angular/core';
 })
 export class FeaturesComponent {
 
+  featuresList:String[][] = [
+    [
+      "../../../assets/images/moneyBack.png",
+      "Money Back Guarantee",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed."
+    ],
+    [
+      "../../../assets/images/claimsAtAnyTime.png",
+      "All Claims At Anytime",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed."
+    ],
+    [
+      "../../../assets/images/digitalInsurance.png",
+      "Digital Insurance Policy",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed."
+    ],
+    [
+      "../../../assets/images/directPayment.png",
+      "Direct Payment App",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed."
+    ]
+  ];
+
 }
