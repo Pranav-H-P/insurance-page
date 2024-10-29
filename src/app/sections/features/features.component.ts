@@ -32,4 +32,21 @@ export class FeaturesComponent {
     ]
   ];
 
+  servicesList:String[][] = [
+    [ 
+      "../../../assets/images/familyCouch.jpg",
+      "Insurance • Vehicle",
+      "Business Insurance"
+    ],
+    [
+      "../../../assets/images/familyChild.jpg",
+      "Insurance • Vehicle",
+      "Vehicle Insurance"
+    ],
+    [
+      "../../../assets/images/elderlyCouple.jpg",
+      "Insurance • Car",
+      "Car Insurance"
+    ]
+  ];
 }

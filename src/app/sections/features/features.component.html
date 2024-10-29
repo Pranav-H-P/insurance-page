@@ -2,7 +2,7 @@
     <p class="mx-auto text-center text-incepGreen">OUR FEATURES</p>
     <p class="mx-auto max-w-[35rem] text-4xl text-center font-bold extraSmall:text-2xl">Better Digital Insurance Begins Right Here</p>
 
-    <div class="flex gap-10  justify-center laptop:flex-wrap">
+    <div class="flex gap-10 justify-center laptop:flex-wrap">
 
         @for (feature of featuresList; track i; let i = $index) {
             <div class="flex flex-col gap-5 p-5 rounded-md shadow-spread h-72 w-72 hover:shadow-spread2">
@@ -16,6 +16,25 @@
 
 </section>
 
-<section>
+<section class="my-10 px-10 min-w-full flex flex-col gap-10">
+    <p class="mx-auto text-center text-incepGreen">INSURANCE SERVICES</p>
+    <p class="mx-auto max-w-[35rem] text-4xl text-center font-bold extraSmall:text-2xl">Take The Worry Out Of Life With Insurance Protection</p>
+
+    <div class="flex gap-10 justify-center p-10 laptop:flex-wrap">
+
+        @for (item of servicesList; track i; let i = $index) {
+            <div class="relative rounded-md transition hover:shadow-spread2">
+                <img src='{{servicesList[i][0]}}' class="rounded-md">
+                <div class=" flex flex-col absolute m-10 mobile:m-4 mobile:p-2 p-8 bg-incepGreen/80 rounded-md bottom-0 left-0 w-3/4">
+                    <p class="text-white extraSmall:text-xs">{{servicesList[i][1]}}</p>
+                    <p class="font-bold text-xl extraSmall:text-sm text-white">{{servicesList[i][2]}}</p>
+                </div>
+
+            </div>
+        }
+
+    </div>
+
+    <p class=" mx-auto text-center w-1/2 text-incepGrey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quae vel expedita odio sint, veritatis vero quaerat modi labore voluptatum aspernatur molestias unde perspiciatis accusantium nemo numquam quasi, quidem dolorem!</p>
 
 </section>
